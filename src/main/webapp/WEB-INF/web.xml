@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+                             http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <display-name>Tomcat</display-name>
+
+    <!-- Mapeamento de Welcome file -->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- Configuração do Servlet CriarPedidoServlet -->
+    <servlet>
+        <servlet-name>CriarPedidoServlet</servlet-name>
+        <servlet-class>CriarPedidoServlet</servlet-class>
+    </servlet>
+
+    <!-- Mapeamento da URL para o Servlet -->
+    <servlet-mapping>
+        <servlet-name>CriarPedidoServlet</servlet-name>
+        <url-pattern>/criarPedido</url-pattern>
+    </servlet-mapping>
+
+</web-app>
